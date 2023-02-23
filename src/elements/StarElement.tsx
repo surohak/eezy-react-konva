@@ -14,10 +14,14 @@ export function StarElementImpl(props: StarProps) {
       id={element.id}
       x={element.x}
       y={element.y}
-      numPoints={5}
+      numPoints={element.numPoints}
       innerRadius={20}
       outerRadius={40}
-      fill={"#ff7900"}
+      fill={element.fill}
+      scaleX={element.scaleX}
+      scaleY={element.scaleY}
+      rotation={element.rotation}
+      draggable
     />
   );
 }
